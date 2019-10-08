@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rotate</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+            font-family: Arial;
+
+        }
+        .contenedor{
+            border: 1px solid red;
+        }
+        .contenedor:hover .cuadrado{
+            /* transform: scale(x,y) */
+            /* transform: scale(0 = 0% del tamaño/ 1 = 100% del tamaño); */
+            /* transform: scale(.5); */
+            transform: scale(2, .5);
+        }
+        .cuadrado{
+            width: 200px;
+            height: 200px;
+            background: #7dc900;
+            margin: 10px;
+            transition: .3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="cuadrado">
+            hola Mundo!
+        </div>
+    </div>
+</body>
+</html>
